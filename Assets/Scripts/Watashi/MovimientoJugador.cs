@@ -51,7 +51,7 @@ public class MovimientoJugador : MonoBehaviour
 			animator.SetBool("Caminando", false);
         }
 
-		if(Input.GetKeyDown (KeyCode.LeftShift))
+		if(Input.GetKeyDown (KeyCode.A))
 		{
 			animator.SetBool("Atacando", true);
 			//Debug.Log(animator.GetBool("Atacando"));

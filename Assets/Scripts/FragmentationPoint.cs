@@ -11,12 +11,16 @@ public class FragmentationPoint : MonoBehaviour
 
     public GameObject ObjectToFragment;
 
+    private GameManager gmRefrence;
+
 
 
     // Use this for initialization
     void Start()
     {
+        gmRefrence = GameManager.instance;
 
+        thePool = gmRefrence.givePool();
     }
 
     // Update is called once per frame
